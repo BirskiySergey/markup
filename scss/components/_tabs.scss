@@ -1,0 +1,26 @@
+$tabs-padding:12px;
+
+.tabs{
+  &-heading{
+     .tabs-btn {
+       display: inline-block;
+       cursor: pointer;
+       padding: $tabs-padding;
+       border: 1px solid red;
+     }
+     .tabs-active{
+       border:1px solid green;
+     }
+  }
+  &-body{
+    .tabs-content{
+      
+    }
+  }
+  &-content{
+    display: none;
+  }
+  &-active{
+    display: block;
+  }
+}

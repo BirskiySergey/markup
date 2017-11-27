@@ -1,0 +1,38 @@
+$btn-padding:       10px 15px;
+$btn-padding-sm:    5px 10px;
+
+$btn-color:         #fff;
+$btn-background:    #000;
+
+$btn-radius:        5px;
+$btn-border:        1px solid red;
+
+.btn{
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    user-select: none;
+
+    padding:$btn-padding;
+    color: $btn-color;
+    background-color: $btn-background;
+    border:$btn-border;
+    border-radius:$btn-radius;
+      &:hover{
+        text-decoration: none;
+      } 
+      &:focus {
+      }
+      &:active,
+      &.is-active {
+      } 
+  }
+
+@media  (max-width: 640px){
+	.btn{
+		padding:$btn-padding-sm;
+	}
+}

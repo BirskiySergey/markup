@@ -1,0 +1,26 @@
+.accordion {
+  color: #000;
+  &-item {
+    height: 55px;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  &-item-active {
+    height: auto;
+    .accordion-item-title {
+      color: blue;
+    }
+  }
+  &-item-title {
+    background: red;
+    text-align: center;
+    height: 55px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  &-content {
+    position: relative;
+    background: #f2f2f2;
+  }
+}

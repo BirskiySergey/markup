@@ -1,0 +1,29 @@
+html {
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+	line-height: $global-line-height;
+	color: $global-color;
+}
+body{
+	background:$global-default-background;
+}
+a {
+	color: $global-link-color;
+	text-decoration:none;
+	&:hover {
+		color: $global-link-hover-color;
+	}
+}
+li{
+  list-style:none;
+}
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }

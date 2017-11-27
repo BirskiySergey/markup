@@ -1,0 +1,94 @@
+$navbar-bg: green;
+$navbar-padding: 40px 0 10px;
+.header {
+  background: $navbar-bg;
+}
+
+.navbar {
+  padding: $navbar-padding;
+  .navbar-icon {
+    display: block;
+  }
+  .nav-list {
+    .nav-item {
+      padding: 0 15px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0
+      }
+      .nav-link {
+        color: black;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  .nav-list-mobile {
+    .nav-item {
+      padding: 10px 0;
+    }
+  }
+  &-toggler {
+    position: relative;
+    display: none;
+    width: 35px;
+    height: 25px;
+    &-icon {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      transition: all 500ms ease-in-out;
+      background: white;
+      height: 5px;
+      width: 35px;
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 5px;
+        width: 35px;
+        background: white;
+        border-radius: 1px;
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+      }
+      &:before {
+        top: -10px;
+      }
+      &:after {
+        bottom: -10px;
+      }
+    }
+    &-active {
+      background-color: transparent;
+      &:before {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+      &:after {
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+  }
+  &-collapse {
+    @media all and (min-width: (640px - 1px)) {
+      display: none !important;
+    }
+  }
+  @media (max-width:640px) {
+    &-toggler {
+      display: block;
+    }
+    &-collapse {
+      display: none;
+    }
+    .nav-list {
+      display: none;
+    }
+  }
+}

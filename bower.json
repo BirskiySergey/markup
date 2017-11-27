@@ -1,0 +1,20 @@
+{
+  "name": "markupus-gulp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "https://github.com/BirskiySergey"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/BirskiySergey/markupus-gulp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

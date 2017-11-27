@@ -1,0 +1,44 @@
+$container-max-width:       1024px;
+$container-min-width:       320px;
+$container-padding:         0 10px;
+
+html {
+  box-sizing: border-box;
+  min-width: 100%;
+}
+body{
+  background-color: #fff;
+}
+body, h1, h2, h3, h4, h5, img, ul, ol, li, a, p {
+  margin: 0;
+  padding: 0; 
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; 
+}
+
+.clearfix:after {
+  clear: both; 
+}
+
+.container {
+  max-width: $container-max-width;
+  min-width:$container-min-width;
+  margin:0 auto;
+  padding: $container-padding;
+}
